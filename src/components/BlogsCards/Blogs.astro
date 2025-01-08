@@ -1,0 +1,45 @@
+---
+import FirstCard from "./FirstCard.astro";
+import SecondCard from "./SecondCard.astro";
+import ThirdCard from "./ThirdCard.astro";
+---
+
+<section class="flex flex-col justify-center gap-10 mt-4 mb-14 py-14">
+  <section class="flex justify-around">
+    <div>
+      <h4 class="text-6xl font-semibold">Our Blogs</h4>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-4">
+        <img src="/shape.png" alt="shape" 
+        class="w-4 h-4"
+        />
+        <img src="/star.png" alt="star" 
+        
+        class="w-4 h-4"
+        />
+      </div>
+
+      <h1 class="text-xs">
+        Learn from our experts in multiple fields of
+
+        <br />
+        business that will help your team grow.
+      </h1>
+    </div>
+    <div>
+      <button
+        class="rounded-full bg-zinc-900 hover:bg-zinc-800 text-white py-2 font-medium px-4"
+      >
+      Explore blog
+      </button>
+    </div>
+  </section>
+
+  <div class="flex justify-center gap-16">
+    <FirstCard />
+    <SecondCard />
+    <ThirdCard />
+  </div>
+</section>
