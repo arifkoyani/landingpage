@@ -1,0 +1,46 @@
+---
+import ContactSaleButton from "./ContactSaleButton.astro";
+import { FaCheckCircle } from "react-icons/fa";
+
+
+// import { Check } from 'lucide-react'
+---
+
+<section class="min-h-[80vh] bg-gradient-to-tr from-blue-50 to-green-50 flex items-center justify-center">
+  <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+    <h1 class="text-5xl md:text-6xl font-medium tracking-tight text-gray-900 mb-8">
+     <span class="flex flex-col gap-4">
+        <span>
+            Power your business
+        </span>
+        <span>
+            with Wapgee
+        </span>
+     </span>
+    </h1>
+    
+    <p class="text-xl text-gray-600 mb-8">
+      Start your subscription now at just <span class="font-semibold">$40/Month</span>
+    </p>
+    
+    <div class="flex flex-wrap justify-center gap-6 mb-12">
+      <div class="flex items-center gap-2">
+        <span class="w-5 h-5 text-gray-900" >
+            <FaCheckCircle />
+
+        </span>
+        <span class="text-gray-600">All premium features</span>
+      </div>
+      <div class="flex items-center  gap-2">
+        <span class="w-5 h-5 text-gray-900" >
+            <FaCheckCircle />
+
+        </span>
+        <span class="text-gray-600">Cancel anytime</span>
+      </div>
+    </div>
+    
+    <ContactSaleButton/>
+  </div>
+</section>
+

@@ -1,0 +1,131 @@
+---
+import TabButtons from "../FAQS/Buttons"
+import { FaAngleUp } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa6";
+
+
+---
+
+
+<section class="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
+    <!-- Label -->
+    <div class="mb-4">
+      <span class="text-sm font-sm text-gray-600 uppercase">
+        FAQ's
+      </span>
+    </div>
+  
+    <!-- Main content wrapper with grid -->
+    <div class="grid gap-14 lg:grid-cols-2 lg:gap-32 items-center">
+      <!-- Heading container -->
+      <div>
+        <h1
+          class="text-4xl sm:text-2xl lg:text-5xl font-medium text-gray-900 leading-loose"
+        >
+        Frequently Asked Questions
+        </h1>
+      </div>
+  
+      <!-- Right side content -->
+  
+      <!-- Decorative icons -->
+  
+      <div>
+        <div class="flex gap-4">
+          <img src="/shape.png" alt="shape" class="w-4 h-4" />
+          <img src="/star.png" alt="star" class="w-4 h-4" />
+        </div>  
+  
+        <!-- Description text -->
+        <p class="text-gray-600 mt-8">
+            Got any common questions in mind? Read our FAQs down below and get <br/> ideas for your doubts.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="flex py-8">
+
+        <div>
+            <div class="max-w-2xl mx-auto p-4">
+                {/* FAQ Item - Expanded */}
+                <div class="mb-4">
+                  <div class="bg-[#f8f8f8] rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-base font-medium text-gray-900">
+                        How can I subscribe to get regular updates?
+                      </h3>
+                      <FaAngleUp />
+
+                    
+                    </div>
+                    <div class="mt-2">
+                      <p class="text-gray-600">
+                        We cover a variety of topics, including tech news, industry insights, updates on 
+                        companies like Meta, Apple, Google, and emerging trends in AI, cybersecurity, 
+                        and digital marketing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          
+                {/* FAQ Item - Collapsed */}
+                <div class="mb-4">
+                  <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                      <h3 class="text-base font-medium text-gray-900">
+                        How can I reach out for customer support?
+                      </h3>
+                      <FaAngleDown />
+
+                     
+                    </div>
+                  </div>
+                </div>
+          
+               
+              </div>
+            
+
+        </div>
+
+
+
+
+        <div class="py-4">
+
+             {/* Additional FAQ Items */}
+             <div class="mb-4">
+                <div class="bg-[#f8f8f8] rounded-lg p-4">
+                  <div class="flex justify-between items-center gap-10 ">
+                    <h3 class="text-base font-medium text-gray-900">
+                      Is there a free version of the content?
+                    </h3>
+                    <FaAngleDown />
+                   
+                  </div>
+                </div>
+              </div>
+        
+              <div class="mb-4">
+                <div class="bg-[#f8f8f8] rounded-lg p-4">
+                  <div class="flex justify-between gap-10 items-center ">
+                    <h3 class="text-base font-medium  text-gray-900">
+                      How do I update my billing or subscription details?
+                    </h3>
+                    <FaAngleDown />
+                
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+    <div>
+
+    <TabButtons/>
+    </div>
+
+</section>

@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
 import Stats_Section from "../components/Stats_Section.astro";
-import HeroSection from "../components/HeroSection.astro";
+import HeroSection from "../components/HeroSection/HeroSection.astro";
 import Blogs from "../components/BlogsCards/Blogs.astro";
 import BlogToolsCards from "../components/BlogToolsCards/BlogToolsCards.astro";
+import FAQS from "../components/FAQS/FAQS.astro";
+import Footer from "../components/Footer/Footer.astro";
+import ContactSales from "../components/ContactSale/ContactSale.astro";
 ---
 
 <Layout>
@@ -14,5 +17,8 @@ import BlogToolsCards from "../components/BlogToolsCards/BlogToolsCards.astro";
     <Stats_Section />
     <Blogs />
     <BlogToolsCards/>
+    <FAQS/>
+    <ContactSales/>
+    <Footer/>
   </>
 </Layout>
